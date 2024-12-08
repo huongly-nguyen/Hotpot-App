@@ -1,0 +1,6 @@
+<!-- res/drawable/circular_green_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="40dp" /> <!-- Eckenradius anpassen, falls benötigt -->
+    <solid android:color="@color/hotpot_green" /> <!-- Farbe anpassen -->
+</shape>

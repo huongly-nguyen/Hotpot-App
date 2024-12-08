@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/hotpotIconExplanation"
+                android:src="@drawable/hotpot_icon" />
+
+            <Button
+                android:id="@+id/login_signUp_tab"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/transparent"
+                android:fontFamily="@font/kodchasan_bold"
+                android:text="@string/signupString"
+                android:textAllCaps="false"
+                android:textColor="@color/hotpot_dark_green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login_signIn_tab"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/hotpot_green"
+                android:fontFamily="@font/kodchasan_bold"
+                android:text="@string/loginString"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:text="@string/loginString"
+                android:textColor="#26783D"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kodchasan_bold"
+                android:gravity="center"
+                android:scaleX="1.1"
+                android:scaleY="1.2"
+                android:text="@string/loginSplashMessage"
+                android:textColor="#26783D"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/emailString"
+                    android:textColor="@color/hotpot_dark_green" />
+
+                <EditText
+                    android:id="@+id/signInEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/edit_ext"
+                    android:backgroundTint="@color/hotpot_dark_green"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/emailHint"
+                    android:inputType="textEmailAddress"
+                    android:scaleX=".8" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/passwordString"
+                    android:textColor="@color/hotpot_dark_green" />
+
+                <EditText
+                    android:id="@+id/signInPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edit_ext"
+                    android:backgroundTint="@color/hotpot_dark_green"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/passwordHint"
+                    android:inputType="textPassword"
+                    android:scaleX=".8" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signIn_bottom_Btn"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/hotpot_green"
+                android:fontFamily="@font/kodchasan_bold"
+                android:text="@string/loginString"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

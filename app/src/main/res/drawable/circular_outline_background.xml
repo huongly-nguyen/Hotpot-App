@@ -1,0 +1,9 @@
+<!-- res/drawable/button_stroke.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="40dp" /> <!-- Adjust the corner radius as needed -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/hotpot_dark_green" />
+    <solid android:color="@color/transparent" />
+</shape>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#267B3D</color>
+    <color name="hotpot_green">#116026</color>
+    <color name="hotpot_light_green">#34A853</color>
+    <color name="hotpot_dark_green">#021306</color>
+    <color name="navBar_green_color">#041107</color>
+    <color name="hint_search_color">#6B6E6C</color>
+    <color name="categories_box_bg_color">#C395D8AC</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

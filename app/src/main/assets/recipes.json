@@ -1,0 +1,321 @@
+[
+  {
+    "name": "Spaghetti Carbonara",
+    "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper.",
+    "ingredients": [
+      "400g Spaghetti",
+      "4 large Eggs",
+      "150g diced Pancetta",
+      "100g grated Parmesan Cheese",
+      "1 tsp freshly ground Black Pepper"
+    ],
+    "instructions": "Cook spaghetti. Fry pancetta. Mix eggs and cheese, and combine with pasta and pancetta.",
+    "details": "difficulty: Easy | rating: 4.5 | time: 30 min",
+    "tags": ["gluten"]
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "description": "A popular Indian curry dish with roasted chicken chunks in a spicy sauce.",
+    "ingredients": [
+      "500g boneless Chicken",
+      "200ml Yogurt",
+      "400ml Tomato Sauce",
+      "1 tbsp each of garam masala, turmeric, cumin",
+      "100ml Cream"
+    ],
+    "instructions": "Marinate and roast chicken. Cook sauce with tomatoes and spices. Combine chicken with sauce.",
+    "details": "difficulty: Medium | rating: 4.7 | time: 2 hrs 40 min",
+    "tags": ["vegetarian"]
+  },
+  {
+    "name": "Beef Stroganoff",
+    "description": "A Russian dish of sautéed pieces of beef served in a sauce with smetana (sour cream).",
+    "ingredients": [
+      "500g thinly sliced Beef",
+      "200g sliced Mushrooms",
+      "1 large chopped Onion",
+      "200ml Sour Cream",
+      "1 tbsp Mustard"
+    ],
+    "instructions": "Saute beef and onions. Add mushrooms. Stir in sour cream and mustard. Serve over rice or noodles.",
+    "details": "difficulty: Medium | rating: 4.6 | time: 1 hr",
+    "tags": []
+  },
+  {
+    "name": "Caesar Salad",
+    "description": "A green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper.",
+    "ingredients": [
+      "1 head chopped Romaine Lettuce",
+      "1 cup Croutons",
+      "50g shaved Parmesan Cheese",
+      "100ml Caesar Dressing"
+    ],
+    "instructions": "Mix lettuce, croutons, and cheese. Add dressing and toss the salad.",
+    "details": "difficulty: Easy | rating: 4.4 | time: 15 min",
+    "tags": ["pescetarian","vegetarian"]
+  },
+  {
+    "name": "Pad Thai",
+    "description": "A stir-fried rice noodle dish commonly served as a street food and at casual local eateries in Thailand.",
+    "ingredients": [
+      "200g Rice Noodles",
+      "2 large Eggs",
+      "100g firm Tofu",
+      "200g peeled Shrimp",
+      "50g crushed Peanuts",
+      "100g Bean Sprouts",
+      "1 juiced Lime",
+      "120ml Pad Thai Sauce"
+    ],
+    "instructions": "Stir-fry tofu and shrimp. Add noodles and sauce. Mix in eggs, bean sprouts, and peanuts.",
+    "details": "difficulty: Medium | rating: 4.8 | time: 30 min",
+    "tags": ["peanuts", "shellfish", "pescetarian"]
+  },
+  {
+    "name": "Fish Tacos",
+    "description": "A Mexican dish consisting of grilled or fried fish, lettuce or cabbage, pico de gallo, and a creamy sauce, all placed on top of a corn or flour tortilla.",
+    "ingredients": [
+      "400g any white Fish Fillets",
+      "8 small Tortillas",
+      "200g shredded Cabbage",
+      "1 sliced Avocado",
+      "1 juiced Lime",
+      "A handful chopped Cilantro",
+      "100ml Sour Cream"
+    ],
+    "instructions": "Grill or fry fish. Warm tortillas. Assemble tacos with fish, cabbage, avocado, and sauce.",
+    "details": "difficulty: Easy | rating: 4.7 | time: 25 min",
+    "tags": ["pescetarian"]
+  },
+  {
+    "name": "Margherita Pizza",
+    "description": "A typical Neapolitan pizza, made with tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil.",
+    "ingredients": [
+      "500g Pizza Dough",
+      "150ml Tomato Sauce",
+      "200g sliced Mozzarella Cheese",
+      "A few leaves of Basil",
+      "2 tbsp Olive Oil"
+    ],
+    "instructions": "Spread sauce on dough. Top with cheese and basil. Bake in a preheated oven.",
+    "details": "difficulty: Easy | rating: 4.6 | time: 1 hr 10 min",
+    "tags": ["pescetarian", "vegetarian", "gluten"]
+  },
+  {
+    "name": "Vegetable Stir Fry",
+    "description": "A quick and easy dish consisting of various vegetables stir-fried in a light sauce.",
+    "ingredients": [
+      "500g Mixed Vegetables (e.g., bell peppers, broccoli, carrots)",
+      "60ml Soy Sauce",
+      "2 cloves minced Garlic",
+      "2 tsp grated Ginger",
+      "2 tbsp Vegetable Oil"
+    ],
+    "instructions": "Stir-fry vegetables in oil with garlic and ginger. Add soy sauce and cook until tender.",
+    "details": "difficulty: Easy | rating: 4.5 | time: 20 min",
+    "tags": ["soy", "vegan", "vegetarian", "pescetarian"]
+  },
+  {
+    "name": "Butternut Squash Soup",
+    "description": "A creamy soup made from butternut squash, onions, and a blend of spices, often enjoyed in the fall.",
+    "ingredients": [
+      "1 large peeled and cubed Butternut Squash",
+      "1 chopped Onion",
+      "750ml Vegetable Stock",
+      "100ml Cream",
+      "1/2 tsp Nutmeg"
+    ],
+    "instructions": "Cook squash and onions in stock until soft. Blend until smooth. Add cream and nutmeg.",
+    "details": "difficulty: Medium | rating: 4.7 | time: 45 min",
+    "tags": ["vegetarian", "pescetarian"]
+  },
+  {
+    "name": "Chocolate Brownies",
+    "description": "A dense, rich, chocolate cake which is, in texture, like a cross between a cake and a cookie.",
+    "ingredients": [
+      "200g melted Butter",
+      "300g Sugar",
+      "3 large Eggs",
+      "100g Flour",
+      "50g Cocoa Powder",
+      "100g Chocolate Chips"
+    ],
+    "instructions": "Mix butter, sugar, and eggs. Add flour and cocoa powder. Fold in chocolate chips. Bake.",
+    "details": "difficulty: Easy | rating: 4.8 | time: 50 min",
+    "tags": ["vegetarian", "pescetarian"]
+  },
+  {
+    "name": "Vegan Chili",
+    "description": "A hearty and flavorful chili made with a variety of beans, vegetables, and spices.",
+    "ingredients": [
+      "1 can Black Beans",
+      "1 can Kidney Beans",
+      "1 large chopped Onion",
+      "2 diced Bell Peppers",
+      "400g canned Tomatoes",
+      "2 cloves minced Garlic",
+      "1 tbsp Chili Powder",
+      "1 tsp Cumin",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Saute onions and bell peppers. Add garlic, beans, tomatoes, and spices. Simmer for 30 minutes.",
+    "details": "difficulty: Easy | rating: 4.6 | time: 40 min",
+    "tags": ["vegan", "gluten-free"]
+  },
+  {
+    "name": "Quinoa and Black Bean Salad",
+    "description": "A nutritious and refreshing salad combining quinoa, black beans, and a variety of vegetables.",
+    "ingredients": [
+      "200g Quinoa",
+      "1 can Black Beans",
+      "1 diced Red Bell Pepper",
+      "1 diced Yellow Bell Pepper",
+      "50g Corn",
+      "1 diced Avocado",
+      "2 tbsp Lime Juice",
+      "2 tbsp Olive Oil",
+      "1/4 cup chopped Cilantro",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Cook quinoa. Mix with black beans, bell peppers, corn, and avocado. Dress with lime juice, olive oil, cilantro, salt, and pepper.",
+    "details": "difficulty: Easy | rating: 4.7 | time: 25 min",
+    "tags": ["vegan", "gluten-free"]
+  },
+  {
+    "name": "Vegan Mushroom Stroganoff",
+    "description": "A creamy and savory stroganoff made with mushrooms and a rich vegan sauce.",
+    "ingredients": [
+      "500g sliced Mushrooms",
+      "1 chopped Onion",
+      "2 cloves minced Garlic",
+      "250ml Vegan Cream",
+      "2 tbsp Soy Sauce",
+      "2 tbsp Olive Oil",
+      "250g Pasta",
+      "1 tsp Paprika",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Saute mushrooms, onion, and garlic. Add soy sauce, cream, paprika. Simmer. Serve over cooked pasta.",
+    "details": "difficulty: Medium | rating: 4.5 | time: 30 min",
+    "tags": ["vegan"]
+  },
+  {
+    "name": "Vegetarian Lasagna",
+    "description": "A rich and hearty lasagna layered with a variety of cheeses, spinach, and marinara sauce.",
+    "ingredients": [
+      "250g Lasagna Noodles",
+      "400g Ricotta Cheese",
+      "200g Mozzarella Cheese",
+      "100g Grated Parmesan Cheese",
+      "500g Spinach",
+      "700ml Marinara Sauce",
+      "1 Egg",
+      "2 cloves minced Garlic",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Cook noodles. Mix ricotta, egg, garlic, salt, and pepper. Layer noodles, cheese mixture, spinach, marinara sauce, and mozzarella. Bake.",
+    "details": "difficulty: Medium | rating: 4.7 | time: 1 hr 30 min",
+    "tags": ["vegetarian", "gluten", "dairy"]
+  },
+  {
+    "name": "Caprese Salad",
+    "description": "A simple Italian salad, made of sliced fresh mozzarella, tomatoes, and sweet basil, seasoned with salt, and olive oil.",
+    "ingredients": [
+      "4 large sliced Tomatoes",
+      "300g sliced Mozzarella Cheese",
+      "Handful of Basil leaves",
+      "2 tbsp Olive Oil",
+      "Salt and Pepper to taste",
+      "Balsamic Glaze (optional)"
+    ],
+    "instructions": "Layer alternating slices of tomato and mozzarella. Add basil. Drizzle with olive oil and balsamic glaze. Season.",
+    "details": "difficulty: Easy | rating: 4.8 | time: 15 min",
+    "tags": ["vegetarian", "gluten-free", "dairy"]
+  },
+  {
+    "name": "Mushroom Risotto",
+    "description": "A creamy Italian rice dish cooked with a variety of mushrooms and parmesan cheese.",
+    "ingredients": [
+      "200g Arborio Rice",
+      "500g mixed Mushrooms",
+      "1 liter Vegetable Stock",
+      "1 chopped Onion",
+      "2 cloves minced Garlic",
+      "100g grated Parmesan Cheese",
+      "2 tbsp Olive Oil",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Saute mushrooms, onion, garlic. Add rice, cook until translucent. Gradually add stock, stirring. Finish with parmesan.",
+    "details": "difficulty: Medium | rating: 4.6 | time: 45 min",
+    "tags": ["vegetarian", "gluten", "dairy"]
+  },
+  {
+    "name": "Beef Bourguignon",
+    "description": "A French stew prepared with beef braised in red wine, often red Burgundy, and beef broth, flavored with carrots, onions, garlic, and a bouquet garni, with pearl onions and mushrooms.",
+    "ingredients": [
+      "500g Beef Chuck",
+      "200ml Red Wine",
+      "200ml Beef Broth",
+      "150g Pearl Onions",
+      "150g Mushrooms",
+      "2 diced Carrots",
+      "2 cloves minced Garlic",
+      "2 tbsp Flour",
+      "3 tbsp Olive Oil",
+      "1 Bouquet Garni",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Brown beef. Set aside. Cook vegetables. Add flour, wine, broth, beef, and bouquet garni. Simmer until beef is tender.",
+    "details": "difficulty: Hard | rating: 4.9 | time: 3 hrs",
+    "tags": ["meat", "gluten", "dairy-free"]
+  },
+  {
+    "name": "Pork Adobo",
+    "description": "A popular Filipino dish and cooking process in Filipino cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy sauce, and garlic, which is browned in oil, and simmered in the marinade.",
+    "ingredients": [
+      "500g Pork Belly",
+      "100ml Soy Sauce",
+      "100ml Vinegar",
+      "1 head minced Garlic",
+      "1 tsp Peppercorns",
+      "2 Bay Leaves",
+      "2 tbsp Cooking Oil",
+      "1 tbsp Sugar",
+      "Salt to taste"
+    ],
+    "instructions": "Marinate pork in soy sauce, vinegar, garlic, peppercorns, and bay leaves. Brown pork in oil. Add marinade and simmer until tender.",
+    "details": "difficulty: Medium | rating: 4.8 | time: 1 hr 20 min",
+    "tags": ["meat", "gluten-free", "nut-free"]
+  },
+  {
+    "name": "Classic Roast Chicken",
+    "description": "A whole chicken roasted with herbs, butter, and lemon, resulting in crispy skin and juicy meat.",
+    "ingredients": [
+      "1 whole Chicken",
+      "50g softened Butter",
+      "1 Lemon",
+      "1 head Garlic",
+      "A few sprigs of Thyme",
+      "Salt and Pepper to taste"
+    ],
+    "instructions": "Rub chicken with butter, lemon, and herbs. Place garlic inside cavity. Roast until golden.",
+    "details": "difficulty: Easy | rating: 4.7 | time: 1 hr 30 min",
+    "tags": ["meat", "gluten-free", "dairy"]
+  },
+  {
+    "name": "Grilled Salmon with Lemon Herb Butter Sauce",
+    "description": "Tender grilled salmon fillets are topped with a zesty lemon herb butter sauce.",
+    "ingredients": [
+      "4 Salmon Fillets",
+      "2 tbsp Olive Oil",
+      "Salt and Pepper to taste",
+      "50g unsalted Butter",
+      "1 Lemon, juiced and zested",
+      "2 tbsp chopped fresh Dill",
+      "2 tbsp chopped fresh Parsley"
+    ],
+    "instructions": "Grill salmon with olive oil, salt, and pepper. In a pan, melt butter and add lemon juice, zest, dill, and parsley. Pour over salmon to serve.",
+    "details": "difficulty: Easy | rating: 4.8 | time: 25 min",
+    "tags": ["fish", "gluten-free", "nut-free"]
+  }
+]

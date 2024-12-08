@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signIn">
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.hotpot.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signIn_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.hotpot.SignUp"
+        android:label="fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.hotpot.MainActivity"
+        android:label="activity_main_activity"
+        tools:layout="@layout/activity_main_activity" />
+    <activity
+        android:id="@+id/accountActivity"
+        android:name="com.example.hotpot.AccountActivity"
+        android:label="AccountActivity" />
+    <activity
+        android:id="@+id/shoppingListActivity"
+        android:name="com.example.hotpot.ShoppingListActivity"
+        android:label="activity_shopping_list"
+        tools:layout="@layout/activity_shopping_list" />
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="com.example.hotpot.SearchActivity"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
+</navigation>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#041107">
+
+    <LinearLayout
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView_filters_heading"
+            style="@style/FiltersHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/kodchasan"
+            android:padding="10dp"
+            android:text="FILTERS"
+            android:textColor="@color/hotpot_light_green"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="Dietary Preferences"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D0FFBF" />
+
+        <View
+            android:id="@+id/green_bar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/hotpot_light_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_vegan"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/hotpot_light_green"
+                android:button="@drawable/selector_checkbox"
+                android:buttonTint="@color/hotpot_light_green"
+                android:checked="false"
+                android:drawableTint="@color/hotpot_light_green"
+                android:textColorHighlight="@color/hotpot_light_green"
+                android:textColorLink="@color/hotpot_light_green"
+                app:useMaterialThemeColors="false" />
+
+
+            <ImageView
+                android:id="@+id/imageView_vegan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/vegan" />
+
+            <TextView
+                android:id="@+id/textView_vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegan"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_vegetarian"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_vegetarian"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/vegetarian" />
+
+            <TextView
+                android:id="@+id/textView_vegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_pescatarian"
+            style="@style/FilterCheckboxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_checkbox" />
+
+        <ImageView
+            android:id="@+id/imageView_pescatarian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/fish" />
+
+        <TextView
+            android:id="@+id/textView_pescatarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pescatarian"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_kosher"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_kosher"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/kosher" />
+
+            <TextView
+                android:id="@+id/textView_kosher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kosher"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_halal"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_halal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/halal" />
+
+            <TextView
+                android:id="@+id/textView_halal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halal"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_keto"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_keto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/keto" />
+
+            <TextView
+                android:id="@+id/textView_keto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keto"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_paleo"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_paleo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/paleo" />
+
+            <TextView
+                android:id="@+id/textView_paleo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paleo"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Allergies"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D0FFBF" />
+
+        <View
+            android:id="@+id/green_bar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/hotpot_light_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_lactose"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_lactose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/lactose" />
+
+            <TextView
+                android:id="@+id/textView_lactose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lactose free"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_peanut"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_peanut"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/peanut" />
+
+            <TextView
+                android:id="@+id/textView_peanut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peanut allergy"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_shellfish"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_shellfish"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/shellfish" />
+
+            <TextView
+                android:id="@+id/textView_shellfish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shellfish allergy"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_gluten"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_gluten"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/shellfish" />
+
+            <TextView
+                android:id="@+id/textView_gluten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gluten allergy"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_soy"
+                style="@style/FilterCheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox" />
+
+            <ImageView
+                android:id="@+id/imageView_soy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/soy" />
+
+            <TextView
+                android:id="@+id/textView_soy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soy allergy"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="204dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/hotpot_green"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Save"
+            android:textColorHighlight="@color/hotpot_light_green"
+            android:textColorLink="@color/hotpot_light_green" />
+    </LinearLayout>
+</ScrollView>

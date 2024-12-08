@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ingredientsList_ScrollView"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:id="@+id/ingredientListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ingredientsList_HomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:src="@drawable/home_button"
+                    app:tint="@color/hotpot_light_green" />
+
+                <TextView
+                    android:id="@+id/ingredients_list_heading"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="My Fridge"
+                    android:textColor="@color/hotpot_dark_green"
+                    android:textSize="40dp" />
+
+                <ImageButton
+                    android:id="@+id/fridgeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:src="@drawable/fridge_button_icon" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/search_view_background"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search..."
+                android:submitBackground="@android:color/transparent"
+                app:queryBackground="@android:color/transparent" />
+
+            <ScrollView
+                android:id="@+id/ingredientsList_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="534dp"
+                android:layout_marginTop="16dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="4">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/meat_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/meat_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/meat" />
+
+                            <TextView
+                                android:id="@+id/meat_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/meat_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Meat, sausages and fish"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/vege_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/vege_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/vege" />
+
+                            <TextView
+                                android:id="@+id/vege_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/vege_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="23dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Vegetables"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nuts_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/nuts_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/nuts" />
+
+                            <TextView
+                                android:id="@+id/nuts_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/nuts_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Grain, nuts,baking products"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/herbs_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/herbs_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/herb" />
+
+                            <TextView
+                                android:id="@+id/herbs_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/herbs_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Herbs and spices"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/milk_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/milk_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/milk" />
+
+                            <TextView
+                                android:id="@+id/milk_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/milk_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Egg and diary products"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/rice_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/rice_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/rice" />
+
+                            <TextView
+                                android:id="@+id/rice_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rice_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Rice"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pasta_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/pasta_image"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:scaleX=".8"
+                                android:scaleY=".8"
+                                android:src="@drawable/pasta" />
+
+                            <TextView
+                                android:id="@+id/pasta_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pasta_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Pasta"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fruits_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/fruits_image"
+                                android:layout_width="170dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:scaleX="1.4"
+                                android:scaleY="1.4"
+                                android:src="@drawable/fruits" />
+
+                            <TextView
+                                android:id="@+id/fruits_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/fruits_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Fruits"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/beverage_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/beverage_icon"
+                                android:layout_width="170dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:src="@drawable/beverage_icon" />
+
+                            <TextView
+                                android:id="@+id/beverage_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/beverage_icon"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center_horizontal"
+                                android:text="Beverages"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/others_box"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/categories_box_bg_color"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/others_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center"
+                                android:text="Others"
+                                android:textColor="@color/hotpot_green"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+
+            app:itemIconTint="@color/hotpot_dark_green"
+            app:itemTextColor="@color/hotpot_dark_green"
+            app:layout_anchorGravity="bottom"
+            app:menu="@menu/bottom_navigation_menu" />
+    </FrameLayout>
+
+</RelativeLayout>

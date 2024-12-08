@@ -1,0 +1,33 @@
+<!-- res/layout/fragment_popup.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/add_recipe_overlay"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/addRecipeBtn"
+        android:layout_width="193dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/hotpot_green"
+        android:fontFamily="@font/abeezee"
+        android:gravity="bottom"
+        android:text="Add New Recipe" />
+
+    <Button
+        android:id="@+id/closeAddRecipeBtn"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:textSize="14dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/abeezee"
+        android:backgroundTint="@color/hotpot_green"
+        android:gravity="center"
+        android:text="X" />
+
+</LinearLayout>
